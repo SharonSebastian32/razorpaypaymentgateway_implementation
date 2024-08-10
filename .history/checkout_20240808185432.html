@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razorpay Payment Integration</title>
+  </head>
+  <body>
+    <h2>Razorpay Payment Integration</h2>
+    <form id="paymentForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <input
+        type="text"
+        id="contact"
+        placeholder="Enter your contact number"
+        required
+      />
+      <input
+        type="number"
+        id="amount"
+        placeholder="Enter amount in INR"
+        required
+      />
+      
+      <label for="choices">Choose an option:</label>
+<select id="choices" name="choices">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+       <button id="rzp-button1" type="submit">Pay with Razorpay</button>
+    </form>
+    <script src="./paymentGateway.js"></script>
+    <!-- Razorpay Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </body>
+</html>
